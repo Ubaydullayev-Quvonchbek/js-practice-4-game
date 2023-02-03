@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    z-index: 2;
+}
+
+#bg1 {
+    position: fixed;
+    left: 27%;
+    bottom: 0;
+    z-index: 1;
+    width: 45%;
+    display: none;
+}
+
+#bg2 {
+    position: fixed;
+    left: 27%;
+    bottom: 0;
+    z-index: 1;
+    width: 45%;
+    display: none;
+}
+
+#bg3 {
+    position: fixed;
+    left: 27%;
+    bottom: 0;
+    z-index: 1;
+    width: 45%;
+    display: none;
+}
+
+#heading1 {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+#heading2 {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #153243;
+    background: #3e3e3e;
+    border: transparent;
+    border-radius: 20px;
+    transition: .7s;
+    box-shadow: 0px 0px 50px #fff;
+    z-index: 2;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #153243;
+    background: #9A9A9A;
+    border: transparent;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0px 0px 50px #fff;
+    z-index: 2;
+}
+
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #0B1922;
+    background: #fff;
+    border: transparent;
+    border-radius: 20px;
+    transition: .7s;
+    box-shadow: 0px 0px 50px #fff;
+    z-index: 2;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.you-us {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 3;
+}
