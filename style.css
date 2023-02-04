@@ -13,9 +13,18 @@ body {
     z-index: 2;
 }
 
+video,
+button,
+h1,
+div,
+br {
+    margin: 0;
+    padding: 0;
+}
+
 #bg1 {
-    position: fixed;
-    left: 27%;
+    position: absolute;
+    left: 27.5%;
     bottom: 0;
     z-index: 1;
     width: 45%;
@@ -23,8 +32,8 @@ body {
 }
 
 #bg2 {
-    position: fixed;
-    left: 27%;
+    position: absolute;
+    left: 27.5%;
     bottom: 0;
     z-index: 1;
     width: 45%;
@@ -32,8 +41,8 @@ body {
 }
 
 #bg3 {
-    position: fixed;
-    left: 27%;
+    position: absolute;
+    left: 27.5%;
     bottom: 0;
     z-index: 1;
     width: 45%;
@@ -45,16 +54,17 @@ body {
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
-    z-index: 3;
+    margin-bottom: 50px;
+    z-index: 100;
 }
 
 #heading2 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: 400;
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
-    z-index: 3;
+    z-index: 100;
 }
 
 #btn1,
@@ -62,7 +72,6 @@ body {
 #btn3 {
     width: 100px;
     height: 100px;
-    margin-top: 50px;
     margin-left: 15px;
     cursor: pointer;
     margin-right: 15px;
@@ -70,18 +79,34 @@ body {
     font-weight: 400;
     font-size: 50px;
     text-align: center;
-    color: #153243;
-    background: #3e3e3e;
     border: transparent;
     border-radius: 20px;
-    transition: .7s;
-    box-shadow: 0px 0px 50px #fff;
-    z-index: 2;
+    background: #0B1922;
+    box-shadow: 0px 0px 50px 0px rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: 100ms;
+    z-index: 100;
 }
 
-#btn1:hover,
-#btn2:hover,
-#btn3:hover {
+.fa-hand-back-fist,
+.fa-hand-scissors,
+.fa-hand {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B1922;
+    box-shadow: 0px 0px 50px 0px rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: 100ms;
+    z-index: 100;
+}
+
+#btn1:hover::before,
+#btn2:hover::before,
+#btn3:hover::before {
     width: 100px;
     height: 100px;
     margin-top: 50px;
@@ -92,13 +117,30 @@ body {
     font-weight: 400;
     font-size: 50px;
     text-align: center;
-    color: #153243;
-    background: #9A9A9A;
     border: transparent;
     border-radius: 20px;
+    background: #0B1922;
+    box-shadow: 0px 0px 50px 0px rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    transition: 100ms;
+    z-index: 100;
+}
+
+.fa-hand-back-fist:hover::before,
+.fa-hand-scissors:hover::before,
+.fa-hand:hover::before {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
     transition: .5s;
-    box-shadow: 0px 0px 50px #fff;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B1922;
+    box-shadow: 0px 0px 50px 0px rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    transition: 100ms;
+    z-index: 100;
 }
 
 #btn1:focus,
@@ -106,7 +148,6 @@ body {
 #btn3:focus {
     width: 100px;
     height: 100px;
-    margin-top: 50px;
     margin-left: 15px;
     cursor: pointer;
     margin-right: 15px;
@@ -114,20 +155,36 @@ body {
     font-weight: 400;
     font-size: 50px;
     text-align: center;
-    color: #0B1922;
-    background: #fff;
     border: transparent;
     border-radius: 20px;
-    transition: .7s;
-    box-shadow: 0px 0px 50px #fff;
-    z-index: 2;
+    background: #0B1922;
+    box-shadow: 0px 0px 70px 10px rgb(0, 0, 255);
+    color: rgb(0, 0, 255);
+    transition: 100ms;
+    z-index: 100;
+}
+
+.fa-hand-back-fist:focus,
+.fa-hand-scissors:focus,
+.fa-hand:focus {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B1922;
+    box-shadow: 0px 0px 70px 10px rgb(0, 0, 255);
+    color: rgb(0, 0, 255);
+    transition: 100ms;
+    z-index: 100;
 }
 
 .d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 100;
 }
 
 .you-us {
@@ -135,5 +192,5 @@ body {
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
-    z-index: 3;
+    z-index: 100;
 }
